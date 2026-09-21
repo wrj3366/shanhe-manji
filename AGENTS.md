@@ -29,4 +29,4 @@
 - 修改后运行 `python3 scripts/travel.py check` 与 `build`，必要时跑 `python3 -m unittest discover -s tests`。
 - 保留无关用户改动。按本次授权提交相关文件；没有明确要求时，不推送、发布或把家庭信息公开。
 - 公开发布时只选择拟分享的路书页面，另行核对偏好、家庭区域、日志和实拍是否适合分享。`notes/`、`trips/`、`data/`不是默认公开资料。
-- 本项目使用 GitHub Pages 发布网页，仓库为 `wrjvszq/shanhe-manji`；推送 `main` 后由 `.github/workflows/pages.yml` 构建 `dist/` 并部署。用户没有指定更换平台时沿用 GitHub Pages。
+- 本项目使用 GitHub Pages 发布网页，仓库为 `wrj3366/shanhe-manji`；推送 `main` 后由 `.github/workflows/pages.yml` 构建 `dist/` 并部署。用户没有指定更换平台时沿用 GitHub Pages。

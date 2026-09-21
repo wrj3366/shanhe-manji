@@ -54,7 +54,7 @@ ABOUT_HTML = """<!doctype html>
         <p><strong>计划</strong><span>路线、节奏和待核实事项</span></p>
         <p><strong>记录</strong><span>真实到访与现场感受</span></p>
         <p><strong>复盘</strong><span>值得保留的经验和下一站</span></p>
-        <a href="https://github.com/wrjvszq/shanhe-manji" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a>
+        <a href="https://github.com/wrj3366/shanhe-manji" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a>
         <a href="index.html">返回旅行档案首页</a>
       </div>
     </section>

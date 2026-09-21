@@ -4,7 +4,7 @@
 
 持续积累的个人旅行工程：行前做路书，途中记体验，回来再复盘。现有伊犁材料与2026中秋国庆探亲路书已归入统一首页，后续旅行放在同一个仓库。
 
-仓库：[wrjvszq/shanhe-manji](https://github.com/wrjvszq/shanhe-manji)。沿用现有 Git 历史，本地目录仍为 `ili-route-map`，项目名称为“山河慢记”。
+仓库：[wrj3366/shanhe-manji](https://github.com/wrj3366/shanhe-manji)。沿用现有 Git 历史，本地目录仍为 `ili-route-map`，项目名称为“山河慢记”。
 
 ## 使用
 
@@ -56,7 +56,7 @@ python3 scripts/build_site.py
 
 首次发布需要在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。设置完成后，推送 `main` 或手动运行 **Publish GitHub Pages** 工作流。
 
-默认站点地址：<https://wrjvszq.github.io/shanhe-manji/>；秋季路书：<https://wrjvszq.github.io/shanhe-manji/autumn-homecoming/>。以 Actions 部署成功及页面实际可访问为上线依据。
+默认站点地址：<https://wrj3366.github.io/shanhe-manji/>；秋季路书：<https://wrj3366.github.io/shanhe-manji/autumn-homecoming/>。以 Actions 部署成功及页面实际可访问为上线依据。
 
 新增页面与引用的档案需要先纳入 Git 跟踪，再构建发布包。源代码推送到本仓库的 `main` 分支：`git push origin HEAD:main`。
 
