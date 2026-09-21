@@ -52,11 +52,15 @@ python3 scripts/build_site.py
 
 这会生成 `dist/`：旅行首页、各趟路书、页面资源，以及页面直接引用的档案说明。发布产物单独生成，不包含 Git 历史、CLI、测试、项目约定、原始JSON或未跟踪文件；首页展示的偏好和日志仍包含在生成的展示数据中。
 
-`dist/` 不提交 Git。发布前会校验站内链接，并为发布版生成独立的项目简介。可以把该目录发布到妙搭等静态托管服务；页面发布成功后再记录线上链接。
+`dist/` 不提交 Git。发布前会校验站内链接，并为发布版生成独立的项目简介。本站使用 **GitHub Pages**；`.github/workflows/pages.yml` 在每次推送 `main` 时自动运行测试、构建并发布 `dist/`。
+
+首次发布需要在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。设置完成后，推送 `main` 或手动运行 **Publish GitHub Pages** 工作流。
+
+默认站点地址：<https://wrjvszq.github.io/shanhe-manji/>；秋季路书：<https://wrjvszq.github.io/shanhe-manji/autumn-homecoming/>。以 Actions 部署成功及页面实际可访问为上线依据。
 
 新增页面与引用的档案需要先纳入 Git 跟踪，再构建发布包。源代码推送到本仓库的 `main` 分支：`git push origin HEAD:main`。
 
-后续更新先修改源资料，再运行数据校验、构建与测试，按当次授权推送 Git 和更新线上页面。Git 推送与网页部署是两个独立步骤，不把推送成功当作页面已上线。
+后续更新先修改源资料，再运行数据校验、构建与测试，按当次授权推送 Git；Actions 会自动更新线上页面。Git 推送与网页部署是两个独立步骤，不把推送成功当作页面已上线。
 
 ## 资料边界
 
