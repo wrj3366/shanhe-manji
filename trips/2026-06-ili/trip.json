@@ -1,0 +1,52 @@
+{
+  "id": "2026-06-ili",
+  "title": "伊犁 · 草原、湖泊与现场复盘",
+  "status": "recorded",
+  "dateLabel": "2026年6月 · 已有部分现场记录",
+  "startDate": null,
+  "endDate": null,
+  "dateNote": "旧页面标注6/19—6/28，年份依据2026/6/29笔记推断；未把该日期范围或推荐线路当成已核实的实际轨迹。",
+  "summary": "保留伊犁原始规划、旅途中避坑笔记和复盘后推荐路线。已确认的现场感受独立归档，逐日经历与个人实拍仍可补充。",
+  "tags": [
+    "现场反馈",
+    "草原湖泊",
+    "自驾",
+    "复盘待补"
+  ],
+  "route": [
+    "伊犁区域 · 非实际轨迹"
+  ],
+  "highlights": [
+    "9条原始现场笔记",
+    "喀拉峻景区住宿值得留时间",
+    "唐布拉保留为下次愿望"
+  ],
+  "links": [
+    {
+      "label": "旅行复盘页面",
+      "path": "travel-journal.html",
+      "kind": "review"
+    },
+    {
+      "label": "现场笔记原文",
+      "path": "notes/travel-field-notes.md",
+      "kind": "notes"
+    },
+    {
+      "label": "复盘后伊宁环线（推荐）",
+      "path": "route-yining-loop.html",
+      "kind": "plan"
+    },
+    {
+      "label": "草原路线比选（规划）",
+      "path": "route-options-grassland.html",
+      "kind": "plan"
+    },
+    {
+      "label": "最初10天规划（存档）",
+      "path": "ili-original.html",
+      "kind": "plan"
+    }
+  ],
+  "updatedAt": "2026-09-21"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "2026-09-autumn-homecoming",
+  "title": "自驾塞北，飞回旬邑",
+  "status": "planned",
+  "dateLabel": "2026.09.25 — 10.07 · 13天",
+  "startDate": "2026-09-25",
+  "endDate": "2026-10-07",
+  "dateNote": "日期为计划；航班、实际运营机场、景区开放与停车价格仍需核实。",
+  "summary": "北京出发，经大同、呼市与哈素海，停车飞回旬邑探亲；飞回取车后看辉腾锡勒与火山，集宁连住两晚再直返北京。",
+  "tags": [
+    "自驾＋飞行",
+    "探亲",
+    "草原与火山",
+    "历史美食"
+  ],
+  "route": [
+    "北京",
+    "大同",
+    "呼和浩特",
+    "哈素海",
+    "飞西安咸阳",
+    "旬邑",
+    "飞回呼市",
+    "辉腾锡勒",
+    "集宁",
+    "乌兰哈达火山",
+    "北京"
+  ],
+  "highlights": [
+    "4个完整在家日",
+    "集宁连住2晚",
+    "地图与逐日路书已完成"
+  ],
+  "links": [
+    {
+      "label": "打开13天互动路书",
+      "path": "autumn-homecoming/",
+      "kind": "plan"
+    },
+    {
+      "label": "行程与待办档案",
+      "path": "trips/2026-09-autumn-homecoming/plan.md",
+      "kind": "notes"
+    },
+    {
+      "label": "旅后复盘空白模板（尚未出行）",
+      "path": "trips/2026-09-autumn-homecoming/review.md",
+      "kind": "review"
+    }
+  ],
+  "updatedAt": "2026-09-21"
+}
