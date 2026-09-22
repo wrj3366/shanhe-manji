@@ -8,7 +8,6 @@
     beijing: { name: '北京', coords: [39.9042, 116.4074], day: 1, label: '起 / 终', phase: 'outbound', direction: 'right' },
     datong: { name: '大同 · 2晚', coords: [40.0768, 113.3001], day: 2, label: '同', phase: 'outbound', direction: 'bottom' },
     hohhot: { name: '呼和浩特 · 停车换飞机', coords: [40.8426, 111.7492], day: 4, label: '呼', phase: 'outbound', direction: 'left' },
-    hasuhai: { name: '哈素海 · 敕勒川', coords: [40.63, 111.04], day: 4, label: '湖', phase: 'outbound', direction: 'left' },
     volcano: { name: '乌兰哈达火山', coords: [41.62, 113.13], day: 12, label: '火', phase: 'return', direction: 'top' },
     xiy: { name: '西安咸阳机场 · 接送', coords: [34.4471, 108.7516], day: 5, label: '✈', phase: 'home', direction: 'right' },
     xunyi: { name: '旬邑 · 家', coords: [35.1122, 108.3337], day: 6, label: '家', phase: 'home', direction: 'left' },
@@ -35,10 +34,10 @@
   const range = values => values[0] === values[1] ? String(values[0]) : values.join('—');
   const searchUrl = query => `https://www.amap.com/search?query=${encodeURIComponent(query)}`;
   const dateLabel = date => date.slice(5).replace('-', '.');
-  const distanceText = day => day.phase === 'home' ? '自有车停呼市' : `${day.mode === 'flight' ? '呼市地面自驾' : '自驾'}约${range(day.km)}公里`;
-  const driveText = day => day.phase === 'home' ? '无长途安排' : day.mode === 'flight' ? '飞机 + 地面接送 · 半天以上' : `纯开约${range(day.hours)}小时`;
-  const total = days.reduce((sum, day) => [sum[0] + day.km[0], sum[1] + day.km[1]], [0, 0]);
-  document.getElementById('total-km').innerHTML = `${(Math.round(total[0] / 100) * 100).toLocaleString()}—${(Math.round(total[1] / 100) * 100).toLocaleString()}<span>公里</span>`;
+  const distanceText = day => day.phase === 'home' ? '自有车停呼市' : !day.km ? '自驾里程待导航核实' : `${day.mode === 'flight' ? '呼市地面自驾' : '自驾'}约${range(day.km)}公里`;
+  const driveText = day => day.phase === 'home' ? '无长途安排' : day.mode === 'flight' ? '飞机 + 地面接送 · 半天以上' : !day.hours ? '驾驶时间待导航核实' : `纯开约${range(day.hours)}小时`;
+  const total = days.filter(day => day.km).reduce((sum, day) => [sum[0] + day.km[0], sum[1] + day.km[1]], [0, 0]);
+  document.getElementById('total-km').innerHTML = days.some(day => !day.km) ? '待核实<span>全程里程</span>' : `${(Math.round(total[0] / 100) * 100).toLocaleString()}—${(Math.round(total[1] / 100) * 100).toLocaleString()}<span>公里</span>`;
 
   for (const day of days) {
     const dateButton = document.createElement('button');
